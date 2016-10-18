@@ -1,3 +1,19 @@
+
+Model details: 
+
+* RNNSearch model
+* Source-Target character level 
+* CNN+RNN encoder 
+* Bi-scale decoder 
+* {Fi,De,Cs,Ru}→En
+
+Training: 
+
+* Mix mini-batches 
+* Use bi-text only
+
+---
+
 * character-level convolutional network with max-pooling at the encoder to reduce the length of source rep- resentation, allowing the model to be trained at a speed comparable to subword-level models while capturing local regularities.
 
 * Attentional NMT models have three components: an encoder, a decoder and an attention mechanism.
