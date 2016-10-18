@@ -14,6 +14,20 @@ Training:
 
 ---
 
+Potential Benefits:
+
+1. Positive language transfer across many language pairs/directions ▸
+Solution to low/zero-resource machine translation
+2. # of parameters grows linearly w.r.t. the # of languages ▸
+as opposed to the quadratic explosion when training many single-pair models.
+3. Multi-source translation without requiring any multi-way parallel text
+▸ inspired by but contrary to Zoph & Knight (2016)
+
+
+above notes from: [Recent Advances and the Future of Neural Machine Translation](https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf)
+
+---
+
 * character-level convolutional network with max-pooling at the encoder to reduce the length of source rep- resentation, allowing the model to be trained at a speed comparable to subword-level models while capturing local regularities.
 
 * Attentional NMT models have three components: an encoder, a decoder and an attention mechanism.
