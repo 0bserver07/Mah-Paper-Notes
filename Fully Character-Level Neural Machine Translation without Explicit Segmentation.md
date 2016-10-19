@@ -40,7 +40,7 @@ Some inspirations for the model in the paper:
 
 1. Costa-jussa and Fonollosa (2016) replaced the word-lookup table with convolutional and highway layers on top of character embeddings,
 
-2. Ling et al. (2015) employed a bidirectional LSTM to compose character embeddings into word embeddings. At the target side, another LSTM takes the hidden state of the decoder and
+2. Ling et al. (2015) employed a bidirectional LSTM to compose character embeddings into word embeddings. At the target side, another LSTM takes the hidden state of the decoder and the target word, character by character.
 
 3. Luong and Manning (2016) introduced a hybrid scheme that uses character-level information whenever the model sees a new word that is not from the model's previous seen vocabularies. (3 months to train)
 
