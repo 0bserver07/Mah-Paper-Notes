@@ -1,3 +1,5 @@
+####  Fully Character-Level Neural Machine Translation without Explicit Segmentation (Jason Lee, Kyunghyun Cho, Thomas Hofmann) [arXiv:1610.03017](https://arxiv.org/abs/1610.03017v1)
+
 ##### Brief Summary 2x Speed:
 
 * This is a Neural Machine Translation model on Character Level.
@@ -16,7 +18,7 @@
 To understand the significance of this paper, we have to reflect a little on the previous approaches that has been applied towards machine translation in the line of Neural Machine Translation.
 
 * Mapping direct character from source to target language is a challenge. That's why most of the NMT researches have been almost all at word-level.
-* Most Attentional Neural Machine Translation model follow some variation of this architecture:
+* Most Attentional Neural Machine Translation models follow some variation of this architecture:
 
  `an encoder, a decoder and an attention mechanism`
 
@@ -47,25 +49,26 @@ Some inspirations for the model in the paper:
 5. (Chung et al., 2016), which used a subword-level encoder from (Sennrich et al., 2015) and a fully character-level decoder (bpe2char). Their results show that character-level decoding performs better than subword-level decoding.
 
 
-Encoder `[ Word Embeddings >> Conv 1d >> Max-Pooling w/ Stride >> Segment Embedding >> Bi-dir GRU >> ]`
+**Encoder:** `[ Word Embeddings >> Conv 1d >> Max-Pooling w/ Stride >> Segment Embedding >> Bi-dir GRU >> ]`
 
 ![figure 1](http://i.imgur.com/C2TJGXw.png)
-	 - * Figure 1
+	 
+	 - *Figure 1
 
-Attention: [similar to (Bahdanau et al., 2015)]
-Here is one example of how the attention mechanism can help:
+**Attention:** [similar to (Bahdanau et al., 2015)] Here is one example of how the attention mechanism can help:
+
 ![attention](https://3.bp.blogspot.com/-3Pbj_dvt0Vo/V-qe-Nl6P5I/AAAAAAAABQc/z0_6WtVWtvARtMk0i9_AtLeyyGyV6AI4wCLcB/s640/nmt-model-fast.gif)
-	 - * Figure 2
+	 
+	 - *Figure 2
 
 
-Decoder:
-`A two-layer character-level decoder then takes the source context vector from the attention mechanism and predicts each target character.`
+**Decoder:** `A two-layer character-level decoder then takes the source context vector from the attention mechanism and predicts each target character.`
 
 
 
-This architecture might not be new, however the previous approaches have not been on Char 2 Char fully, and the last few approaches were either partially character level and very slow.
+Parts of this architecture might not be new, however the previous approaches have not been on Character 2 Character fully, and the last few approaches were either partially character level and very slow.
 
-Cool fun things out of this mode:
+Cool fun things out of this model:
 
 * Share a single character- level encoder across multiple languages by training a model on a many-to-one translation task. Outperforms the subword-level encoder on all the language pairs.
 * Advantage of character-level models is that they are better suited for multilingual translation than their word-level counterparts which require a separate word vocabulary for each language
@@ -76,13 +79,14 @@ Cool fun things out of this mode:
 
 More: 
 
-``` Potential Benefits:
+Notes from: [Recent Advances and the Future of Neural Machine Translation](https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf)
+
+Potential Benefits: 
+
 1. Positive language transfer across many language pairs/directions 
 	* Solution to low/zero-resource machine translation
 2. Number of parameters grows linearly  with respect to the number of languages as opposed to the quadratic explosion when training many single-pair models.
 3. Multi-source translation without requiring any multi-way parallel text
-```
-Above notes from: [Recent Advances and the Future of Neural Machine Translation](https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf)
 
 
 ##### Other notes:
