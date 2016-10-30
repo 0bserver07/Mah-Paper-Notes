@@ -55,6 +55,7 @@
 * One-shot Learning with Memory-Augmented Neural Networks < > [[Paper](https://arxiv.org/abs/1605.06065)]
 * Neural Programmer: Inducing Latent Programs with Gradient Descent < > [[Paper](https://arxiv.org/abs/1511.04834)]
 * Neural Programmer-Interpreters < > [[Paper](https://arxiv.org/abs/1511.06279)]
+* Reasoning about Entailment with Neural Attention < > [[Paper](https://arxiv.org/abs/1509.06664)]
 
 #### March-2016:
 
