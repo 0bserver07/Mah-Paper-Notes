@@ -5,9 +5,9 @@
 * This is a Neural Machine Translation model on Character Level.
 * Nearly all the previous approaches have been at the level of words and sub-words translation.
 * The Encoder is the sauce, model details, (The Important part is the Encoder to look at if you just want to bounce):
-  * Source-Target character level 
-  * CNN+RNN encoder 
-  * Bi-scale decoder 
+  * Source-Target character level
+  * CNN+RNN encoder
+  * Bi-scale decoder
   * {Fi,De,Cs,Ru}→En
 * Introduces Many to One language translation through the use of same encoder.
 * It outperforms a baseline with a subword-level encoder on DE-EN and CS-EN, and achieves a comparable result on FI- EN and RU-EN.
@@ -52,13 +52,13 @@ Some inspirations for the model in the paper:
 **Encoder:** `[ Word Embeddings >> Conv 1d >> Max-Pooling w/ Stride >> Segment Embedding >> Bi-dir GRU >> ]`
 
 ![figure 1](http://i.imgur.com/C2TJGXw.png)
-	 
+
 	 - *Figure 1
 
 **Attention:** [similar to (Bahdanau et al., 2015)] Here is one example of how the attention mechanism can help:
 
 ![attention](https://3.bp.blogspot.com/-3Pbj_dvt0Vo/V-qe-Nl6P5I/AAAAAAAABQc/z0_6WtVWtvARtMk0i9_AtLeyyGyV6AI4wCLcB/s640/nmt-model-fast.gif)
-	 
+
 	 - *Figure 2
 
 
@@ -77,13 +77,13 @@ Cool fun things out of this model:
 * Train character-to- character NMT model without any explicit segmentation;
 * Share a single character-level encoder across multiple languages to build a multilingual translation system without increasing the model size.
 
-More: 
+More:
 
 Notes from: [Recent Advances and the Future of Neural Machine Translation](https://ufal.mff.cuni.cz/mtm16/files/12-recent-advances-and-future-of-neural-mt-orhat-firat.pdf)
 
-Potential Benefits: 
+Potential Benefits:
 
-1. Positive language transfer across many language pairs/directions 
+1. Positive language transfer across many language pairs/directions
 	* Solution to low/zero-resource machine translation
 2. Number of parameters grows linearly  with respect to the number of languages as opposed to the quadratic explosion when training many single-pair models.
 3. Multi-source translation without requiring any multi-way parallel text

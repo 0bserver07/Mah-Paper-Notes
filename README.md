@@ -2,12 +2,25 @@
 
 ----
 
-* [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (https://github.com/0bserver07/Mah-Paper-Notes/blob/master/notes/Fully%20Character-Level%20Neural%20Machine%20Translation%20without%20Explicit%20Segmentation.md) < > [[Paper](https://arxiv.org/abs/1610.03017v1)]
+* :penguin:'s mean notes are included in repo.
+
 
 
 ----
 
-#### rest of Fall-2016:
+
+#### Rest of Fall-2016:
+
+* [Implicit ReasoNet: Modeling Large-Scale Structured Relationships with Shared Memory](https://github.com/0bserver07/Mah-Paper-Notes/blob/master/notes/Implicit-ReasoNet.md) <:penguin:> [Paper](https://arxiv.org/abs/1611.04642)
+* Neural Turing Machines: < > [(arXiv:1410.5401)](https://arxiv.org/abs/1410.5401)
+* Differentiable Neural Computer: < > [DeepMind /on Nature](https://deepmind.com/blog/differentiable-neural-computers/)
+* Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes: < > [(arXiv:1610.09027)](https://arxiv.org/abs/1610.09027)
+
+
+
+#### October-Nov of Fall-2016:
+
+* [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (https://github.com/0bserver07/Mah-Paper-Notes/blob/master/notes/Fully%20Character-Level%20Neural%20Machine%20Translation%20without%20Explicit%20Segmentation.md) <:penguin:> [[Paper](https://arxiv.org/abs/1610.03017v1)]
 
 * Using Fast Weights to Attend to the Recent Past < > [[Paper](https://arxiv.org/abs/1610.06258)]
 * Connecting Generative Adversarial Networks and Actor-Critic Methods < > [[Paper](https://arxiv.org/abs/1610.01945)]
