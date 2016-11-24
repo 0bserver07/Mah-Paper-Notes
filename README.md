@@ -16,6 +16,8 @@
 * Differentiable Neural Computer: < > [DeepMind /on Nature](https://deepmind.com/blog/differentiable-neural-computers/)
 * Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes: < > [(arXiv:1610.09027)](https://arxiv.org/abs/1610.09027)
 
+* SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation
+Vijay < > [(arXiv:1511.00561)](https://arxiv.org/abs/1511.00561)
 
 
 #### October-Nov of Fall-2016:
